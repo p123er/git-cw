@@ -46,9 +46,9 @@ Algo sobre mí : Me gustan los videojuegos
 **Qué hacer:** Escribe tres cosas concretas que aprendiste en esta sesión.  
 **Commit:** `docs(aprendizaje): agrega notas de la sesión`
 
-1. 
-2. 
-3. 
+1. Gitlab es open-source
+2. Cómo utilizar algunos comandos de Git para crear repositorios, saber el estado de sus archivos, realizar cambios y conectarse con servidores remotos
+3. Sintaxis de Markdown
 
 ---
 
