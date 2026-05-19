@@ -34,6 +34,34 @@ int main() {
     <h2>1. Preprocesamiento</h2>
     <p>Para iniciar, fijémonos en la primera línea:</p>
     <code>#include &lt;stdio.h&gt;</code>
-    <p>Esta indica que incluya la biblioteca <code>stdio.h</code>, a través de la directiva <code>include</code> (incluir bilbiotecas), que va seguida del símbolo <code>#</code>, que significa preprocesamiento. Es decir, tiene que expandir los archivos de las biblotecas antes de que inicie el proceso de compilación como tal.<br> En este caso, se necesita <code>stdio.h</code> para utilizar las funciones del código.</p>
+    <p>Esta indica que incluya la biblioteca <code>stdio.h</code>, a través de la directiva <code>include</code> (incluir bilbiotecas), que va seguida del símbolo <code>#</code>, que significa preprocesamiento. Es decir, tiene que expandir los archivos de las biblotecas antes de que inicie el proceso de compilación como tal.<br>
+        En este caso, se necesita <code>stdio.h</code> para utilizar las funciones del código.</p>
+    <h2>2. Función principal</h2>
+    <p>Lo siguiente en el código es la función principal.</p>
+    <pre><code>
+int main() {
+   int edad;
+   printf("¿Cuántos años tienes? ");
+   scanf("%d", &edad);
+
+
+   if (edad >= 18) {
+       printf("Eres mayor de edad.\n");
+   } else {
+       printf("Eres menor de edad.\n");
+   }
+
+
+   return 0;
+}
+    </code></pre>
+    <p>Veamos sus partes.</p>
+    <h3>Firma</h3>
+    <code>int main()</code>
+    <p>Tenemos aquí la firma de nuestra función principal.<br>
+        Con <code>int</code> nos indica el tipo de valor que retornará (salida), un entero.<br>
+        Con <code>main</code> nos indica su nombre. Que sea <code>main</code> significa que es la función principal del programa.<br> 
+        Los paréntesis que le siguen indican parámetros de entrada. Están vaciós en esta ocasión. </p>
+    
 </body>
 </html>
