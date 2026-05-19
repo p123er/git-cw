@@ -23,7 +23,9 @@ Algo sobre mí : Me gustan los videojuegos
 **Qué hacer:** Agrega al menos tres cosas que sabes hacer (no tienen que ser de programación).  
 **Commit:** `feat(habilidades): agrega lista de habilidades`
 
-- 
+- Sé tocar el piano
+- Sé hablar inglés
+- Aprendo con facilidad
 
 ---
 
