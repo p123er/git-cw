@@ -2,3 +2,4 @@
 **Alumno**: Erik Patricio Mora Santillán
 **Color favorito**: Verde
 **Aopdo**: Erik
+**Platillo favorito:** Enfrijoladas
