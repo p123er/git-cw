@@ -62,6 +62,43 @@ int main() {
         Con <code>int</code> nos indica el tipo de valor que retornará (salida), un entero.<br>
         Con <code>main</code> nos indica su nombre. Que sea <code>main</code> significa que es la función principal del programa.<br> 
         Los paréntesis que le siguen indican parámetros de entrada. Están vaciós en esta ocasión. </p>
-    
+    <h3>Cuerpo</h3>
+    <p>El cuerpo está delimitado por las llaves <code>{}</code>, que son símbolos utilizados en C para especificar bloques.</p>
+    <pre><code>{
+   int edad;
+   printf("¿Cuántos años tienes? ");
+   scanf("%d", &edad);
+
+
+   if (edad >= 18) {
+       printf("Eres mayor de edad.\n");
+   } else {
+       printf("Eres menor de edad.\n");
+   }
+
+
+   return 0;
+}   </code></pre>
+    <p>Aquí ya hay más cosas. Vayamos párrafo por párrafo.</p>
+    <h4>Primer párrafo</h4>
+    <pre><code>   int edad;
+   printf("¿Cuántos años tienes? ");
+   scanf("%d", &edad);        
+    </code></pre>
+    <p>Primero, se declara una variable de tipo <code>int</code>, llamada "<code>edad</code>". Una variable es una localidad de la memoria RAM que nuestro programa solicita al sistema operativo. Al especificar el tipo (<code>int</code>), le indicamos cuánto espacio requeriremos pars nuestra variable y para qué la utilizaremos (guardar un número entero).<br>
+        En la siguiente línea se llama a la función <code>printf</code>. Al llamar a una función debemos especificar sus parámetros de entrada dentro de paréntesis. Le indicamos a <code>printf</code> un mensaje para ser mostrado en la consola. Al ser una cadena (conjunto de caracteres, visto de una manera simplificada), se utilizan las comillas para delimitarlo, siendo el mensaje que se mostrará "¿Cuántos años tienes?".<br>
+        Por último vemos en la última línea que la función <code>scanf</code> está siendo llamada. Está función sirve para obtener un valor ingresado desde la consola y almacenarlo en alguna variable. En sus parámetros le estamos indicando dos cosas: El tipo que deseamos recibir con <code>%d</code>, que es una máscara de formato que se puede utilizar para números enteros; y con <code>&edad</code> la variable en donde queremos guardar el entero.</p>
+    <h4>Segundo párrafo</h4>
+    <pre><code>   if (edad >= 18) {
+       printf("Eres mayor de edad.\n");
+   } else {
+       printf("Eres menor de edad.\n");
+   }</code></pre>
+    <p>En este segmento tenemos un enunciado <code>if</code>, que es una estructura de control condicional para modificar el flujo de nuestro programa dependiendo de si una condición es verdadera o no. Dentro de los paréntesis le mostramos cuál es la condición que tendrá que checar <code>edad&gt;=8</code>, es decir: ¿edad ≥ 8? Si es verdadera, mostrará "Eres mayor de edad". De lo contrario (indicado con <code>else</code>), mostrará "Eres menor de edad".<br>
+        (Nota: <code>\n</code> es una secuencia de escape utilizada para insertar una nueva línea, puesto que no pasaria mucho si directamente insertamos una nueva línea en el código).</p>
+    <h4>Tercer (y último) párrafo</h4>
+    <code>return 0;</code>
+    <p>La última línea. Si pensamos en la firma de la función, recordaremos que tiene que retornar un entero al terminar. Eso es precisamente lo que hará está linea. Al tener el 0, retornará un 0 y terminará nuestro programa. Un valor de 0 le indica al sistema operativo que el programa se completo sin errores.</p>
+    <p>Fin.</p>
 </body>
 </html>
