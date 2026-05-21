@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <meta name="author" content="Erik Patricio Mora Santillán">
+    <meta name="description" content="Tabla de etiquetas HTML">
+    <title>Tabla de etiquetas</title>
+    <style>
+        table, th, td {
+            border:1px solid black
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Etiquetas HTML - mi referencia</caption>
+        <colgroup>
+            <col span="3">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Etiqueta</th>
+                <th scope="col">Para qué sirve</th>
+                <th scope="col">Ejemplo mínimo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td><code>&lt;ul&gt;</code></td><td>Listas no ordenadas</td>
+                <td><pre><code>&lt;ul&gt;
+    &lt;li&gt;Elemento&lt;/li&gt;
+    &lt;li&gt;Elemento (otro)&lt;/li&gt;
+&lt;/ul&gt;</code></pre></td></tr>
+            <tr><td><code>&lt;img&gt;</code></td><td>Insertar imágenes</td>
+                <td><pre><code>&lt;img src="imagen.jpg"
+     width="200"
+     height="10"&gt;</code></pre></td></tr>
+            <tr><td><code>&lt;a&gt;</code></td><td>Insertar hipervínculos</td><td><code>&lt;a href="#contacto"&gt;Ir a la sección contacto&lt;/a&gt;</code></td></tr>
+            <tr><td><code>&lt;ol&gt;</code></td><td>Listas ordenadas</td>
+            <td><pre><code>&lt;ol&gt;
+    &lt;li&gt;Elemento&lt;/li&gt;
+    &lt;li&gt;Elemento (otro)&lt;/li&gt;
+&lt;/ol&gt;</code></pre></td></tr>
+            <tr><td><code>&lt;figcaption&gt;</code></td><td>Mostrar una descripción de una figura, usado con <code>&lt;figure&gt;</code></td>
+            <td><pre><code>&lt;figure&gt;
+    &lt;img src="im.jpg"
+         width="200"
+         height="10"&gt;
+    &lt;figcaption&gt;
+        Fig. 1: Im.jpg
+    &lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre></td></tr>
+        </tbody>
+    </table>
+</body>
+</html>
